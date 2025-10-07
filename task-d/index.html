@@ -1,0 +1,81 @@
+<!--
+Author: Jude Ojeabulu
+Date: 2025-10-07
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Selector Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Basics Of Web Development Task D</h1>
+    <p id="special-message">CSS Selectors Playground.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>About This Page</h2>
+      <p>
+        This page demonstrates different CSS selectors in a clear and organized way.
+        Things observed include element, class, ID, group, descendant, and attribute selectors in action.
+        The goal is to practice writing maintainable CSS while keeping a professional look and feel.
+      </p>
+    </section>
+
+    <section class="panels">
+      <div class="box">
+        <h3>Serious side</h3>
+        <p>Styled using a <strong>class selector</strong> (<code>.box</code>).</p>
+      </div>
+
+      <div class="box highlight" data-note="important">
+        <h3>Fun side</h3>
+        <p>Another <strong>class selector</strong>, plus a second class (<code>.highlight</code>) and a <code>[data-note]</code> attribute.</p>
+      </div>
+    </section>
+
+    <section class="list-area">
+      <h2>Things I’m Currently Practicing</h2>
+      <ul>
+        <li>Element selectors</li>
+        <li>Class & ID selectors</li>
+        <li>Descendant & attribute selectors</li>
+      </ul>
+    </section>
+
+    <section class="media-links">
+      <h2>Links & Media</h2>
+
+      <!-- Attribute selector targets: a[target], img[alt] -->
+      <p>
+        A website i keep going back to:
+        <a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a>
+      </p>
+
+      <figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Evening_on_Kathleen_Lake.jpg"
+          alt="Mountain landscape with lake and sky"
+          width="640"
+          height="427"
+        />
+        <figcaption>A scenic view displaying an evening on Kathleen Lake from (CC BY-SA license).</figcaption>
+      </figure>
+
+      <form class="quick-search" action="#" method="get">
+        <label for="q">Quick search demo:</label>
+        <input id="q" name="q" type="search" placeholder="Type to search…" />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jude Ojeabulu</p>
+  </footer>
+</body>
+</html>
