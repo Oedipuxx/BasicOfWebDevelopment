@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Task G — Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Reuse the starter CSS unchanged -->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <!-- Base layout kept from starter (no style changes) -->
+  <header class="site-header">
+    <h1>Registration</h1>
+  </header>
+
+  <main class="content">
+    <div class="top-grid">
+      <section class="student-info" aria-label="Page information">
+        <h2 class="student-info-title">Information</h2>
+        <p><span class="student-name">Jude Ojeabulu</span></p>
+        <p><span class="student-group">NBIS22k</span></p>
+      </section>
+
+      <section class="controls" aria-label="Registration form">
+        <h2 class="controls-title">Add Person</h2>
+
+        <!-- Disable native messages: we'll show our own -->
+        <form id="regForm" novalidate>
+          <!-- Hidden timestamp: filled automatically on submit -->
+          <input type="hidden" id="timestamp" name="timestamp" />
+
+          <div class="form-row">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="e.g., Jane Doe" />
+          </div>
+          <div id="err-fullName" role="alert" aria-live="polite"></div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="e.g., jane@example.com" />
+          </div>
+          <div id="err-email" role="alert" aria-live="polite"></div>
+
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+358401234567 or 0401234567" />
+          </div>
+          <div id="err-phone" role="alert" aria-live="polite"></div>
+
+          <div class="form-row">
+            <label for="birthDate">Birth date</label>
+            <input id="birthDate" name="birthDate" type="date" />
+          </div>
+          <div id="err-birthDate" role="alert" aria-live="polite"></div>
+
+          <fieldset class="days-group">
+            <legend>Terms</legend>
+            <label>
+              <input id="terms" name="terms" type="checkbox" />
+              I accept the terms.
+            </label>
+          </fieldset>
+          <div id="err-terms" role="alert" aria-live="polite"></div>
+
+          <div class="form-row">
+            <button id="submitBtn" type="submit" class="btn">Submit</button>
+            <button id="clearBtn" type="reset" class="btn btn-secondary">Clear</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrap">
+      <table class="table" id="submissions">
+        <thead>
+          <tr>
+            <th>Full name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Birth date</th>
+            <th>Timestamp</th>
+            <th>Terms</th>
+          </tr>
+        </thead>
+        <tbody aria-live="polite" aria-relevant="additions"></tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
