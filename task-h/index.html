@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Task H — Registration (Tailwind CSS)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="index.js"></script>
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-800 font-sans">
+  <!-- Header -->
+  <header class="bg-indigo-700 text-white py-6 shadow-md">
+    <h1 class="text-center text-2xl font-semibold">Registration</h1>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <!-- Top grid -->
+    <div class="grid md:grid-cols-[30%_70%] gap-6 mb-8">
+      <!-- Info -->
+      <section class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm">
+        <h2 class="text-lg font-semibold mb-2">Information</h2>
+        <p><span class="font-medium">Jude Ojeabulu</span></p>
+        <p><span class="text-sm text-slate-500">NBIS22k</span></p>
+      </section>
+
+      <!-- Form -->
+      <section class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm">
+        <h2 class="text-lg font-semibold mb-3">Add Person</h2>
+
+        <form id="regForm" novalidate class="space-y-3">
+          <input type="hidden" id="timestamp" name="timestamp" />
+
+          <!-- Full name -->
+          <div>
+            <label for="fullName" class="block text-sm font-medium mb-1">Full name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="e.g., Jane Doe"
+              class="w-full rounded border border-slate-300 p-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+            <p id="err-fullName" class="text-sm text-red-600 mt-1"></p>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+            <input id="email" name="email" type="email" placeholder="e.g., jane@example.com"
+              class="w-full rounded border border-slate-300 p-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+            <p id="err-email" class="text-sm text-red-600 mt-1"></p>
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone" class="block text-sm font-medium mb-1">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+358401234567 or 0401234567"
+              class="w-full rounded border border-slate-300 p-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+            <p id="err-phone" class="text-sm text-red-600 mt-1"></p>
+          </div>
+
+          <!-- Birth date -->
+          <div>
+            <label for="birthDate" class="block text-sm font-medium mb-1">Birth date</label>
+            <input id="birthDate" name="birthDate" type="date"
+              class="w-full rounded border border-slate-300 p-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none" />
+            <p id="err-birthDate" class="text-sm text-red-600 mt-1"></p>
+          </div>
+
+          <!-- Terms -->
+          <fieldset class="border border-slate-300 rounded p-3">
+            <legend class="font-semibold text-sm">Terms</legend>
+            <label class="inline-flex items-center mt-2 space-x-2">
+              <input id="terms" name="terms" type="checkbox"
+                class="w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500" />
+              <span>I accept the terms.</span>
+            </label>
+            <p id="err-terms" class="text-sm text-red-600 mt-1"></p>
+          </fieldset>
+
+          <!-- Buttons -->
+          <div class="flex space-x-3 pt-2">
+            <button id="submitBtn" type="submit"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-4 py-2 rounded">
+              Submit
+            </button>
+            <button id="clearBtn" type="reset"
+              class="border border-slate-300 text-slate-700 px-4 py-2 rounded hover:bg-slate-100">
+              Clear
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white border border-slate-200 rounded-lg shadow-sm overflow-x-auto">
+      <table class="w-full border-collapse text-center">
+        <thead class="bg-indigo-700 text-white">
+          <tr>
+            <th class="p-3 font-semibold text-center">Full name</th>
+            <th class="p-3 font-semibold text-center">Email</th>
+            <th class="p-3 font-semibold text-center">Phone</th>
+            <th class="p-3 font-semibold text-center">Birth date</th>
+            <th class="p-3 font-semibold text-center">Timestamp</th>
+            <th class="p-3 font-semibold text-center">Terms</th>
+          </tr>
+        </thead>
+        <tbody id="submissions"
+          class="[&>tr:nth-child(even)]:bg-slate-50 divide-y divide-slate-200 text-center">
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
