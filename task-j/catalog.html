@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BounceBright — Catalog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800">
+
+  <!-- NAV / Header -->
+  <header class="bg-gradient-to-r from-blue-900 via-indigo-800 to-fuchsia-600 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+      <h1 class="text-xl font-bold">BounceBright Rentals</h1>
+      <nav class="flex items-center gap-4">
+        <a href="index.html" class="text-sm hover:underline">Home</a>
+        <a href="catalog.html" class="text-sm font-semibold underline">Catalog</a>
+        <a href="#" class="ml-4 bg-pink-500 hover:bg-pink-600 text-white px-3 py-1 rounded">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+
+    <!-- Intro -->
+    <section class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-blue-900">Catalog — Available Castles</h2>
+      <p class="text-lg text-slate-700 mt-2">Browse our rental inventory. Prices shown: €/day or €/week.</p>
+    </section>
+
+    <!-- Featured Image -->
+    <section class="mb-10">
+      <figure class="max-w-xl mx-auto">
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Bouncing_castle.jpg/960px-Bouncing_castle.jpg?20180310193913" 
+          alt="kids around a bouncy castle photo" 
+          class="w-full h-64 object-cover rounded-lg shadow-lg" 
+          loading="lazy" 
+        />
+        <figcaption class="text-sm text-slate-500 mt-2 text-center">Kids enjoying our castle</figcaption>
+      </figure>
+    </section>
+
+    <!-- Product grid -->
+    <section aria-label="Product grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Product Card Template -->
+      <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="overflow-hidden rounded-md mb-4">
+          <img 
+            src="https://i.ebayimg.com/images/g/yHYAAOSwTM9gtVNV/s-l1200.jpg" 
+            alt="Mini Compact Castle — bright small inflatable" 
+            class="w-full aspect-[4/3] object-cover transform transition duration-300 hover:scale-105" 
+            loading="lazy"
+          />
+        </div>
+        <h3 class="text-lg font-semibold text-blue-700 mb-1">Mini Compact Castle</h3>
+        <p class="text-sm text-slate-700 mb-3">Perfect for small birthdays, home gatherings, and backyard celebrations. Easy to set up, fits well in limited spaces, and keeps kids entertained for hours.</p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="font-medium">39 €/d</span>
+          <a href="#" class="text-sm text-pink-500 hover:underline">Learn more</a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="overflow-hidden rounded-md mb-4">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Azalea_Festival_2019_20.jpg/640px-Azalea_Festival_2019_20.jpg" 
+            alt="Mega Bounce Arena — large capacity inflatable" 
+            class="w-full aspect-[4/3] object-cover transform transition duration-300 hover:scale-105" 
+            loading="lazy"
+          />
+        </div>
+        <h3 class="text-lg font-semibold text-blue-700 mb-1">Mega Bounce Arena</h3>
+        <p class="text-sm text-slate-700 mb-3">Ideal for festivals, school fun days, and large community events. Designed for high-volume play with plenty of room for group bouncing action.</p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="font-medium">199 €/wk</span>
+          <a href="#" class="text-sm text-pink-500 hover:underline">Learn more</a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="overflow-hidden rounded-md mb-4">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Inflatable_castle_Ice_Palace_Winter_Efteling.jpg/640px-Inflatable_castle_Ice_Palace_Winter_Efteling.jpg" 
+            alt="Princess Palace — themed pink castle" 
+            class="w-full aspect-[4/3] object-cover transform transition duration-300 hover:scale-105" 
+            loading="lazy"
+          />
+        </div>
+        <h3 class="text-lg font-semibold text-blue-700 mb-1">Princess Palace</h3>
+        <p class="text-sm text-slate-700 mb-3">A fairy-tale castle that brings magic and imagination to any princess-themed party. Its charming design and soft colors create the perfect royal play experience.</p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="font-medium">59 €/d</span>
+          <a href="#" class="text-sm text-pink-500 hover:underline">Learn more</a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="overflow-hidden rounded-md mb-4">
+          <img src="assets/images/image2.png" alt="Sports Arena — obstacle-style castle" class="w-full aspect-[4/3] object-cover transform transition duration-300 hover:scale-105" loading="lazy"/>
+        </div>
+        <h3 class="text-lg font-semibold text-blue-700 mb-1">Sports Arena</h3>
+        <p class="text-sm text-slate-700 mb-3">Built for energetic play, racing, and team challenges. Kids and teens can run, climb, jump, and compete through a fun obstacle layout.</p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="font-medium">120 €/wk</span>
+          <a href="#" class="text-sm text-pink-500 hover:underline">Learn more</a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="overflow-hidden rounded-md mb-4">
+          <img src="assets/images/image3.png" alt="Deluxe Combo — slide + bounce combo" class="w-full aspect-[4/3] object-cover transform transition duration-300 hover:scale-105" loading="lazy"/>
+        </div>
+        <h3 class="text-lg font-semibold text-blue-700 mb-1">Deluxe Combo</h3>
+        <p class="text-sm text-slate-700 mb-3">A premium 2-in-1 inflatable featuring both a jumping area and slide. Perfect for big events where you want longer playtime and more activity variety.</p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="font-medium">249 €/wk</span>
+          <a href="#" class="text-sm text-pink-500 hover:underline">Learn more</a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow p-4 flex flex-col">
+        <div class="overflow-hidden rounded-md mb-4">
+          <img src="assets/images/image4.png" alt="Kids Fun Pack — small & safe" class="w-full aspect-[4/3] object-cover transform transition duration-300 hover:scale-105" loading="lazy"/>
+        </div>
+        <h3 class="text-lg font-semibold text-blue-700 mb-1">Kids Fun Pack</h3>
+        <p class="text-sm text-slate-700 mb-3">Best suited for toddlers and young children, prioritizing safety and gentle fun. Compact size makes it great for indoor spaces, small gardens, or early-age parties.</p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="font-medium">39 €/d</span>
+          <a href="#" class="text-sm text-pink-500 hover:underline">Learn more</a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section class="max-w-6xl mx-auto text-center py-16 px-6">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">Inside One Of Our Bouncy Castles</h2>
+      <video controls preload="metadata" poster="assets/images/example.jpg" class="w-full max-w-4xl mx-auto rounded-xl shadow-lg" loading="lazy">
+        <source src="assets/videos/video1.mp4" type="video/mp4" />
+        <track kind="captions" label="English" srclang="en" src="captions.vtt" default />
+        Your browser does not support HTML5 video.
+      </video>
+      <p class="text-slate-600 mt-4">A kid playing in our indoor inflatable play zone — showing scale, movement, and the fun in action.</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-200 text-center py-6">
+    <p>&copy; 2025 BounceBright Rentals. All rights reserved.</p>
+    <p class="text-sm mt-2"> Follow us: 
+      <a href="#" class="text-pink-400 hover:text-pink-300 underline mx-1">Instagram</a> | 
+      <a href="#" class="text-pink-400 hover:text-pink-300 underline mx-1">Facebook</a>
+    </p>
+  </footer>
+
+</body>
+</html>
