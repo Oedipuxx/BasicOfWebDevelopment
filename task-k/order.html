@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BounceBright — Order Request</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-slate-50 text-slate-800">
+
+<!-- HEADER / NAV -->
+<header class="bg-gradient-to-r from-blue-900 via-indigo-800 to-fuchsia-600 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+    <h1 class="text-xl font-bold">BounceBright Rentals</h1>
+    <nav class="flex items-center gap-4">
+      <a href="index.html" class="text-sm hover:underline">Home</a>
+      <a href="catalog.html" class="text-sm hover:underline">Catalog</a>
+      <a href="order.html" class="ml-4 bg-pink-500 hover:bg-pink-600 text-white px-3 py-1 rounded">Place an Order</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-6 py-14">
+
+<!-- INTRO SECTION -->
+<section class="text-center mb-10">
+  <h2 class="text-3xl font-bold text-blue-900">Place a Rental Order</h2>
+  <p class="text-lg text-slate-700 mt-2">
+    Fill out the form below to book your inflatable castle. 
+    We’ll confirm availability and send details to your email.
+  </p>
+</section>
+
+<!-- ORDER FORM -->
+<form action="#" method="POST" class="bg-white p-8 rounded-xl shadow-lg space-y-8">
+
+  <!-- Customer Info -->
+  <fieldset class="space-y-4">
+    <legend class="text-xl font-semibold text-blue-800">Customer Information</legend>
+
+    <div>
+      <label for="name" class="font-medium">Full Name *</label>
+      <input id="name" name="name" type="text" required
+             class="w-full mt-1 p-3 rounded-lg border border-slate-300 focus:ring focus:ring-pink-300"/>
+    </div>
+
+    <div>
+      <label for="email" class="font-medium">Email Address *</label>
+      <input id="email" name="email" type="email" required
+             class="w-full mt-1 p-3 rounded-lg border border-slate-300 focus:ring focus:ring-pink-300"/>
+    </div>
+
+    <div>
+      <label for="phone" class="font-medium">Phone Number *</label>
+      <input id="phone" name="phone" type="tel" required
+             class="w-full mt-1 p-3 rounded-lg border border-slate-300 focus:ring focus:ring-pink-300"/>
+    </div>
+  </fieldset>
+
+  <!-- Rental Details -->
+  <fieldset class="space-y-4">
+    <legend class="text-xl font-semibold text-blue-800">Rental Details</legend>
+
+    <div>
+      <label for="item" class="font-medium">Select Castle *</label>
+      <select id="item" name="item" required
+              class="w-full p-3 mt-1 rounded-lg border border-slate-300">
+        <option value="">-- Choose a product --</option>
+        <option>Mini Compact Castle</option>
+        <option>Mega Bounce Arena</option>
+        <option>Princess Palace</option>
+        <option>Sports Arena</option>
+        <option>Deluxe Combo</option>
+        <option>Kids Fun Pack</option>
+      </select>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="flex-1">
+        <label for="start" class="font-medium">Start Date *</label>
+        <input id="start" name="start" type="date" required
+               class="w-full p-3 mt-1 rounded-lg border border-slate-300"/>
+      </div>
+
+      <div class="flex-1">
+        <label for="end" class="font-medium">End Date *</label>
+        <input id="end" name="end" type="date" required
+               class="w-full p-3 mt-1 rounded-lg border border-slate-300"/>
+      </div>
+    </div>
+
+    <div>
+      <label for="quantity" class="font-medium">Quantity *</label>
+      <input id="quantity" name="quantity" type="number" min="1" max="10" required
+             class="w-full p-3 mt-1 rounded-lg border border-slate-300"/>
+    </div>
+  </fieldset>
+
+  <!-- Additional Notes -->
+  <fieldset class="space-y-4">
+    <legend class="text-xl font-semibold text-blue-800">Additional Notes</legend>
+
+    <textarea id="message" name="message" rows="4"
+              placeholder="Special wishes, extra comments..."
+              class="w-full p-3 rounded-lg border border-slate-300"></textarea>
+
+    <label class="flex items-center gap-2">
+      <input type="checkbox" required class="accent-pink-600">
+      <span>I accept the rental terms and privacy policy *</span>
+    </label>
+  </fieldset>
+
+  <!-- Submit Button -->
+  <button type="submit"
+          class="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold p-3 rounded-lg shadow-md">
+    Submit Rental Request
+  </button>
+
+</form>
+</main>
+
+<!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-200 text-center py-6">
+    <p>&copy; 2025 BounceBright Rentals. All rights reserved.</p>
+    <p class="text-sm mt-2"> Follow us: 
+      <a href="#" class="text-pink-400 hover:text-pink-300 underline mx-1">Instagram</a> | 
+      <a href="#" class="text-pink-400 hover:text-pink-300 underline mx-1">Facebook</a>
+    </p>
+  </footer>
+</body>
+</html>
